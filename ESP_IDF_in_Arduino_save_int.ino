@@ -13,7 +13,6 @@ void setup(){
 }
 
 void loop(){
-  Serial.println("");
   Serial.println("New loop:");
 
   nvs_flash_init();
@@ -53,4 +52,5 @@ void loop(){
   nvs_close(my_handle);
     
   delay(10000);
+  Serial.println("");
 }
