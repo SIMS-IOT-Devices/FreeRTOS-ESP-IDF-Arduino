@@ -13,7 +13,8 @@ void setup(){
 }
 
 void loop(){
-  Serial.println("ESP32 is working from Arduino ...");
+  Serial.println("");
+  Serial.println("New loop:");
 
   nvs_flash_init();
   vTaskDelay(1000 / portTICK_PERIOD_MS);
